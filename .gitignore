@@ -1,0 +1,16 @@
+# Sistem dosyaları
+.DS_Store
+Thumbs.db
+
+# Log dosyaları (Bunlar sunucu çalıştıkça dolar, yüklemeye gerek yok)
+*.log
+error_log
+access_log
+
+# PHP ve Nginx geçici dosyaları
+.php_history
+.htaccess.swp
+
+# Eğer ileride gizli şifrelerini tutacağın bir dosya yaparsan:
+.env
+secret_keys.txt
