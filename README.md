@@ -9,7 +9,7 @@ Web güvenliğinde sadece "kodu yazmak" yetmez. Sunucu konfigürasyonunun da zı
 ### 1. Asansör Mantığı (post_max_size vs upload_max_filesize)
 Tıpkı bir asansörün 400kg kapasitesi varken 600kg bindiğinde hareket etmemesi ve alarm vermesi gibi, sunucumuz da kapasiteyi aşan veriyi kapıda yakalar. `memory_limit > post_max_size > upload_max_filesize` hiyerarşisi ile sunucunun "asansörü" asla çökmez.
 
-> **![Asansör Analojisi](assets/asansor.png)**
+> **![Asansör Analojisi](asset/architectural_schema.png)**
 
 ### 2. WhatsApp Mantığı (Sessiz Hata - Silent Failure)
 Birisi WhatsApp'tan 2GB dosya göndermeye çalışsa ve sistem hata vermeden sadece dosyayı silse, kullanıcı sistemin bozuk olduğunu sanır. PHP'nin varsayılan huyu budur. Biz yazdığımız **Middleware** ile bu sessizliği bozduk; hata vererek kullanıcıyı ve sistemi koruyoruz.
