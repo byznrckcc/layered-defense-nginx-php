@@ -24,7 +24,7 @@ Uç noktalara (Endpoints) özel limitler konulmuştur. Veri PHP'ye ulaşmadan Ng
 - `/upload/`: 50MB limit (Dosya)
 - `/webhook/`: 512KB limit (Sinyal)
 
-> **[BURAYA KATMANLI SAVUNMA ŞEMASINI EKLEYECEĞİZ]**
+> **[Layered Defense Architecture](assets/test_nginx_413.png)**
 
 ### Katman 2: Kod Güvenliği (PHP Middleware)
 Nginx'i geçen veriler, PHP içinde `Content-Length` kontrolüne tabi tutulur ve "Silent Failure" engellenir.
